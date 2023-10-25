@@ -56,6 +56,7 @@ body{
   
   .header > .container{
     display: flex;
+    justify-content: space-between;
   }
   
   .logo {
@@ -108,7 +109,8 @@ body{
   .address{
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-left: 344px;
+  display: flex;
+ gap: 30px;
   }
   
   .header-cont {
@@ -119,9 +121,6 @@ body{
     letter-spacing: 0.28px;
   }
   
-  .header-cont:not(:first-child){
-  margin-left: 50px;
-  }
   
   .header-cont:hover,
   .header-cont:focus {
@@ -206,6 +205,9 @@ body{
   }
   
   /*  Чим ми займаємося */
+  .owe-work{
+    padding-bottom: 94px;
+  }
   .owe-work-title {
     color: var(--title-color);
     text-align: center;
@@ -225,9 +227,12 @@ body{
   /* Наша команда */
   .team {
     background-color: #f5f4fa;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
   
   .team-title {
+    margin-bottom: 50px;
     color: var(--title-color);
     text-align: center;
     font-size: 36px;
@@ -236,6 +241,10 @@ body{
     letter-spacing: 1.08px;
   }
   
+  .team-list{
+    display: flex;
+    justify-content: center;
+  }
   .team-name {
     color: var(--title-color);
     text-align: center;
@@ -255,12 +264,18 @@ body{
   }
   
   /* Портфоліо */
+  .portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .portfolio-list{
+    margin-bottom: 50px;
   display: flex;
   justify-content: center;
   }
   
   .portfolio-btn {
+    padding: 6px 22px;
     color: var(--title-color);
     text-align: center;
     font-size: 16px;
@@ -297,12 +312,15 @@ body{
   }
   
   .projekt-list{
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
   }
   
   /* footer */
   .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--bg-color);
   }
   

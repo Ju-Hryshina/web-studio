@@ -184,6 +184,8 @@ body{
   
   .advantages-list{
     display: flex;
+    flex-wrap: wrap;
+
   }
   
   .advantages-tile {
@@ -219,10 +221,18 @@ body{
     margin-bottom: 50px;
   }
   
-  .owe-work-list{
+  .our-work-list {
+    padding-left: 0px;
+  
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
   }
+  
+  .our-work-list > .item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  
   
   /* Наша команда */
   .team {
@@ -241,10 +251,16 @@ body{
     letter-spacing: 1.08px;
   }
   
-  .team-list{
+  .team-list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
   }
+  
+  .team-list > .item {
+    flex-basis: calc((100% - 90px) 4);
+  }
+
   .team-name {
     color: var(--title-color);
     text-align: center;
@@ -312,11 +328,16 @@ body{
   }
   
   .projekt-list{
-    justify-content: center;
     display: flex;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 30px;
+  padding-left: 0px;
   }
-  
+  .projekt-list > .item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
   /* footer */
   .footer {
     padding-top: 60px;

@@ -185,8 +185,15 @@ body{
   .advantages-list{
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 
   }
+
+  .advantages-list > .item{
+    flex-basis: calc((100% - 90px) / 4)
+  }
+
+
   
   .advantages-tile {
     color: var(--title-color);
@@ -221,7 +228,7 @@ body{
     margin-bottom: 50px;
   }
   
-  .our-work-list {
+  .owe-work-list{
     padding-left: 0px;
   
     display: flex;
@@ -229,7 +236,7 @@ body{
     gap: 30px;
   }
   
-  .our-work-list > .item {
+  .owe-work-list > .item {
     flex-basis: calc((100% - 60px) / 3);
   }
   

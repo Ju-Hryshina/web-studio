@@ -129,6 +129,7 @@ body{
   
   /*  Герой*/
   .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)),url(../images/web-studia/hero.png);
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--bg-color);
@@ -181,7 +182,32 @@ body{
     padding-top: 94px;
     padding-bottom: 94px;
   }
-  
+
+  /* beefore */
+.beefore{
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 270px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+.advantages-1 {
+   background-image:url(../images/web-studia/antenna\ 1\ \(1\).png) ;
+  }
+  .advantages-2 {
+    background-image: url(../images/web-studia/clock\ 1\ \(1\).png);
+  }
+  .advantages-3 {
+    background-image: url(../images/web-studia/diagram\ 1.png);
+  }
+  .advantages-4 {
+    background-image: url(../images/web-studia/astronaut\ 1.png);
+  }
+
   .advantages-list{
     display: flex;
     flex-wrap: wrap;
@@ -285,6 +311,13 @@ body{
     line-height: normal;
     letter-spacing: 0.48px;
   }
+  .team-list>.item:hover,
+.team-list>.item:focus{
+  cursor: pointer;
+  border-radius: 0px 0px 4px 4px;
+
+   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
   
   /* Портфоліо */
   .portfolio{
@@ -317,6 +350,13 @@ body{
     color: #fff;
     background-color: var(--accent-color);
   }
+  .projelt-box:hover,
+.projelt-box:focus{
+cursor: pointer;
+border: 1px solid #EEE;
+  background-color: #FFF;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
   
   /* проекти */
   .portfolio-title {
@@ -387,3 +427,4 @@ body{
   .footer-ct:focus {
     color: var(--accent-color);
   }
+  
